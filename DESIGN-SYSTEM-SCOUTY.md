@@ -15,5 +15,5 @@ Derived from Scouty's local brand assets and public-site styling on 8 October 20
 Use the official charcoal logo and mark in `assets/`. Embed copies in the primary deck.
 Large left-aligned headlines, restrained cards, generous whitespace, and monochrome workflow illustrations carry the story.
 Three-column cards collapse to one column on mobile; the eight-step workflow collapses to two columns.
-Desktop slides fill the viewport; mobile slides grow to fit content. Print uses 13.333 × 7.5-inch pages.
-Visible controls, focus outlines, semantic headings, reduced-motion handling and readable source links are required.
+Desktop and mobile slides fill the viewport with only the active slide visible; scrolling is disabled. Visible text is at least 18px. Print uses 13.333 × 7.5-inch pages.
+Visible controls, focus outlines, semantic headings, reduced-motion handling and readable text are required. Product sources remain in `docs/evidence.md`.

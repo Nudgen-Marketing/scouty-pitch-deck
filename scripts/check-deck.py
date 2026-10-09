@@ -26,6 +26,8 @@ class Deck(HTMLParser):
                 self.references.append(a[key])
 
 text = (ROOT / 'scouty-pitch-deck.html').read_text()
+for removed in ('DEMO DAY / OCTOBER 2026', 'Product source: scouty.to · 8 Oct 2026', 'No sales team needed. You approve the first email.'):
+    assert removed not in text, f'Unexpected removed copy: {removed}'
 d = Deck()
 d.feed(text)
 assert len(d.slides) == 10, 'Expected ten slides'

@@ -15,7 +15,7 @@ English, ten-slide presentation for [Scouty](https://scouty.to/), a B2B prospect
 | `.github/workflows/` | Preview and GitHub Pages deployment |
 
 Open the HTML directly, or run `python3 -m http.server 8000` and visit `http://localhost:8000/scouty-pitch-deck.html`.
-Use arrow keys, Page Up/Down, Home/End, horizontal swipe or the on-screen buttons. Vertical scrolling works on mobile. Slide anchors support direct links.
+Use arrow keys, Page Up/Down, Home/End, horizontal swipe or the on-screen buttons. Each slide fits the viewport; scrolling is disabled. Slide anchors support direct links.
 Print with background graphics enabled and headers/footers disabled to produce ten landscape pages. The deck works offline using embedded images and system fonts.
 
 ## Validation and packaging
@@ -39,4 +39,4 @@ The workflow grants read-only contents permission by default and Pages/id-token 
 
 This is an evidence-led product pitch, not a traction report. Illustrative outreach is labelled; pricing and GTM are proposed experiments. See `docs/evidence.md` before adding private metrics, team claims or fundraising details.
 
-Optional browser acceptance checks: with Playwright available on `NODE_PATH` (or locally installed), run `node scripts/check-browser.cjs`. Set `CHROME_PATH` to an existing Chrome executable if Playwright's browser is unavailable. This checks all slides at three viewport sizes, controls, boundaries and simulated swipe events, then generates a cover preview and PDF in `output/`. The verified local PDF contains ten landscape pages. No browser dependency is required by the structural CI checks.
+Optional browser acceptance checks: with Playwright available on `NODE_PATH` (or locally installed), run `node scripts/check-browser.cjs`. Set `CHROME_PATH` to an existing Chrome executable if Playwright's browser is unavailable. This checks all slides at four viewport sizes, controls, boundaries, disabled scrolling, minimum 18px text and simulated swipe events, then generates a cover preview and PDF in `output/`. The verified local PDF contains ten landscape pages. No browser dependency is required by the structural CI checks.
