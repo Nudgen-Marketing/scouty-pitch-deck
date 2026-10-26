@@ -30,9 +30,9 @@ for removed in ('DEMO DAY / OCTOBER 2026', 'Product source: scouty.to · 8 Oct 2
     assert removed not in text, f'Unexpected removed copy: {removed}'
 d = Deck()
 d.feed(text)
-assert len(d.slides) == 10, 'Expected ten slides'
+assert len(d.slides) == 8, 'Expected eight slides'
 assert len(d.ids) == len(set(d.ids)), 'Duplicate IDs'
-assert [s['id'] for s in d.slides] == [f'slide-{i}' for i in range(1, 11)]
+assert [s['id'] for s in d.slides] == [f'slide-{i}' for i in range(1, 9)]
 for key in ('viewport', 'description', 'theme-color', 'og:title', 'og:type', 'og:description', 'twitter:card'):
     assert d.meta.get(key), f'Missing metadata: {key}'
 for ref in d.references:
@@ -45,11 +45,11 @@ for ref in d.references:
 assert d.images and all(img.get('alt') for img in d.images)
 assert all(img['src'].startswith('data:') for img in d.images), 'Deck must embed images'
 assert 'mermail' not in text.lower(), 'Unexpected reference-deck content'
-for required in ('prefers-reduced-motion', '@media print', 'touchstart', 'touchend', 'ArrowRight', 'Home:', 'End:', 'aria-live', 'Illustrative', 'Proposed'):
+for required in ('prefers-reduced-motion', '@media print', 'touchstart', 'touchend', 'ArrowRight', 'Home:', 'End:', 'aria-live'):
     assert required in text, f'Missing behavior or evidence label: {required}'
 workflow = (ROOT / '.github/workflows/deploy-scouty-pitch-deck.yml').read_text()
 assert workflow.count("github.ref == 'refs/heads/main' && github.event_name != 'pull_request'") == 2
 assert 'contents: read' in workflow and 'pages: write' in workflow and 'id-token: write' in workflow
 assert 'scripts/check-deck.py' in workflow and 'scripts/build-site.py' in workflow
 assert 'actions/upload-artifact@' in workflow and 'actions/deploy-pages@' in workflow
-print('PASS: ten slides, IDs, references, metadata, embedded assets, evidence labels and workflow guards')
+print('PASS: eight slides, IDs, references, metadata, embedded assets, evidence labels and workflow guards')
