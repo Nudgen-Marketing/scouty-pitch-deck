@@ -1,6 +1,6 @@
-# Scouty — Entrepreneurship program pitch deck
+# Scouty — Australian SME pitch deck
 
-English, eight-slide startup pitch for an SME-focused Vietnam entrepreneurship program. [Scouty](https://scouty.to/) targets B2B service SMEs in Vietnam and Southeast Asia, then broader expansion. The opening focuses on interrupted owner-led prospecting and the cost of a dedicated sales hire. The owner-approved offer is $30 for 1,000 emails with follow-ups, then pay as you go for more.
+English, eight-slide startup pitch for an Australian audience. [Scouty](https://scouty.to/) is presented to Australian B2B service SMEs, with local pilots proposed. The opening focuses on interrupted owner-led prospecting and the cost of a dedicated sales hire. The owner-approved offer is $30 for 1,000 emails with follow-ups, then pay as you go for more.
 
 ## Contents
 
@@ -39,6 +39,6 @@ The workflow grants read-only contents permission by default and Pages/id-token 
 
 ## Evidence
 
-The deck includes two owner-reported B2B partners after one week of development; it does not claim customer outcomes. The salary benchmark is sourced; pay-as-you-go is owner-confirmed, with exact rates unspecified. See `docs/evidence.md` before adding private metrics, team claims or fundraising details.
+The deck includes two owner-reported B2B partners after one week of development; it does not claim customer outcomes. The Australian salary benchmark is sourced; pay-as-you-go is owner-confirmed, with exact rates unspecified. See `docs/evidence.md` before adding private metrics, team claims or fundraising details.
 
 Optional browser acceptance checks: with Playwright available on `NODE_PATH` (or locally installed), run `node scripts/check-browser.cjs`. Set `CHROME_PATH` to an existing Chrome executable if Playwright's browser is unavailable. This checks all slides at seven viewport sizes, controls, boundaries, disabled scrolling, minimum 18px text and simulated swipe events, then generates a cover preview and PDF in `output/`. The verified local PDF contains eight landscape pages. No browser dependency is required by the structural CI checks.

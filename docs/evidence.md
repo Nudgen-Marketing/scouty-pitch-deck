@@ -1,3 +1,17 @@
+# Current Australian adaptation — 27 October 2026
+
+The user requested messaging for an Australian audience. The deck now seeks Australian SME pilots; it does not claim Australian customers or validation. Existing overseas partner evidence remains unchanged.
+
+## Australian hiring benchmark used in the current deck
+
+[Jobs and Skills Australia — Sales Representatives, ANZSCO 6113](https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations-anzsco/6113-sales-representatives), read 27 October 2026, reports median full-time earnings of A$1,692 per week. Source: ABS Survey of Employee Earnings and Hours, May 2025, customised report. Annualisation: 1,692 × 52 = A$87,984, rounded to A$88K. This is before-tax median pay for adult-rate, full-time non-managerial employees, not total employer cost or an entry-level salary quote. The ANZSCO series is no longer updated; do not describe this as a 2026 wage survey. Scouty supports prospecting, not every responsibility of an employee.
+
+Pricing remains the owner-supplied $30 / 1,000 emails offer. Currency is still unspecified; the Australian audience does not authorise converting it to AUD. No Australian program, rubric or fundraising terms were supplied.
+
+## Historical evidence and unchanged claim boundaries
+
+The Vietnam salary and program references below document the earlier version and are not used as current Australian slide evidence.
+
 # Evidence and claim boundaries
 
 Updated 11 October 2026.

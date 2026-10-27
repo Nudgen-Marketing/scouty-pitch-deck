@@ -1,3 +1,11 @@
+# Current version: Australian SME pitch
+
+Updated 27 October 2026. The user is pitching to an Australian crowd. Preserve the eight-slide problem → hiring commitment → customer → solution → evidence → usage pricing → ask sequence. Localise the customer framing and pilot ask to Australian service SMEs. This is proposed local validation, not a claim of Australian traction or a confirmed company-wide market pivot.
+
+The hiring slide uses about A$88,000 annualised median earnings (A$1,692 × 52 = A$87,984), from ABS May 2025 data published by Jobs and Skills Australia. Preserve the two existing partner relationships and the owner-approved $30 offer without assuming AUD. No dedicated market-size or go-to-market slide is added.
+
+## Historical Vietnam version (superseded audience framing)
+
 # Scouty pitch narrative
 
 Updated 11 October 2026. Audience: Vietnam entrepreneurship program. Owner-approved thesis: **Small service businesses need consistent prospecting without committing to another salary.**
