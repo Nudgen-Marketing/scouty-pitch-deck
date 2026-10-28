@@ -2,10 +2,10 @@ name: Validate and deploy Scouty pitch deck
 on:
   push:
     branches: [main]
-    paths: ['scouty-pitch-deck.html', 'assets/**', 'scripts/**', '.github/workflows/deploy-scouty-pitch-deck.yml']
+    paths: ['scouty-pitch-deck*.html', 'assets/**', 'scripts/**', '.github/workflows/deploy-scouty-pitch-deck.yml']
   pull_request:
     branches: [main]
-    paths: ['scouty-pitch-deck.html', 'assets/**', 'scripts/**', '.github/workflows/deploy-scouty-pitch-deck.yml']
+    paths: ['scouty-pitch-deck*.html', 'assets/**', 'scripts/**', '.github/workflows/deploy-scouty-pitch-deck.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -17,9 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate presentation
+      - name: Validate English and Vietnamese presentations
         run: python3 scripts/check-deck.py
-      - name: Package static site
+      - name: Package bilingual static site
         run: python3 scripts/build-site.py
       - name: Upload preview
         uses: actions/upload-artifact@v4

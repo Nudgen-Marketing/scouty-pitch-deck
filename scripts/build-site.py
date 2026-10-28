@@ -7,8 +7,9 @@ SITE = ROOT / 'site'
 if SITE.exists():
     shutil.rmtree(SITE)
 SITE.mkdir()
-for name in ('index.html', 'scouty-pitch-deck.html'):
-    shutil.copyfile(ROOT / 'scouty-pitch-deck.html', SITE / name)
+shutil.copyfile(ROOT / 'scouty-pitch-deck.html', SITE / 'index.html')
+for name in ('scouty-pitch-deck.html', 'scouty-pitch-deck-vi.html'):
+    shutil.copyfile(ROOT / name, SITE / name)
 shutil.copytree(ROOT / 'assets', SITE / 'assets')
 (SITE / '.nojekyll').touch()
-print('Packaged index.html, scouty-pitch-deck.html, assets/ and .nojekyll')
+print('Packaged English index.html, both language decks, assets/ and .nojekyll')

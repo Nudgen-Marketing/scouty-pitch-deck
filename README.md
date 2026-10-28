@@ -2,11 +2,15 @@
 
 English, eight-slide startup pitch for an Australian audience. [Scouty](https://scouty.to/) is presented to Australian B2B service SMEs, with local pilots proposed. The opening focuses on interrupted owner-led prospecting and the cost of a dedicated sales hire. The owner-approved offer is $30 for 1,000 emails with follow-ups, then pay as you go for more.
 
+The separate Vietnamese deck preserves the earlier ten-slide demo-day narrative and proposed experiments. It is not a translation of the newer Australian SME edition.
+
 ## Contents
 
 | File / folder | Purpose |
 | --- | --- |
 | `scouty-pitch-deck.html` | Standalone interactive deck with embedded brand assets |
+| `scouty-pitch-deck-vi.html` | Vietnamese ten-slide demo-day presentation |
+| `docs/speaker-notes-vi.md` | Vietnamese five-minute script |
 | `assets/` | Official Scouty logo and mark |
 | `DESIGN-SYSTEM-SCOUTY.md` | Brand and presentation conventions |
 | `docs/speaker-notes.md` | Roughly three-minute script |
@@ -27,11 +31,11 @@ python3 scripts/check-deck.py
 python3 scripts/build-site.py
 ```
 
-The `site/` artifact contains only the deck at `index.html` and `scouty-pitch-deck.html`, shared assets and `.nojekyll`. Generated outputs are ignored.
+The `site/` artifact contains only the deck at `index.html` and `scouty-pitch-deck.html`, the Vietnamese deck at `scouty-pitch-deck-vi.html`, shared assets and `.nojekyll`. Generated outputs are ignored.
 
 ## GitHub Actions / Pages
 
-Relevant pull requests to `main`, pushes to `main` and manual runs validate and upload the downloadable `scouty-pitch-deck` artifact. Only `main` pushes or manual runs from `main` deploy to Pages; pull requests never deploy.
+Changes to either deck trigger the workflow. Relevant pull requests to `main`, pushes to `main` and manual runs validate and upload the downloadable `scouty-pitch-deck` artifact. Only `main` pushes or manual runs from `main` deploy to Pages; pull requests never deploy.
 
 Before the first deployment, set repository **Settings → Pages → Build and deployment → Source → GitHub Actions**. The workflow needs the `github-pages` environment to allow deployment from `main`; review any repository-specific environment rules. No custom domain or secret is required. The default project URL is `https://nudgen-marketing.github.io/scouty-pitch-deck/`; it is an expected address, not a claim of live deployment.
 
@@ -41,4 +45,4 @@ The workflow grants read-only contents permission by default and Pages/id-token 
 
 The deck includes two owner-reported B2B partners after one week of development; it does not claim customer outcomes. The Australian salary benchmark is sourced; pay-as-you-go is owner-confirmed, with exact rates unspecified. See `docs/evidence.md` before adding private metrics, team claims or fundraising details.
 
-Optional browser acceptance checks: with Playwright available on `NODE_PATH` (or locally installed), run `node scripts/check-browser.cjs`. Set `CHROME_PATH` to an existing Chrome executable if Playwright's browser is unavailable. This checks all slides at seven viewport sizes, controls, boundaries, disabled scrolling, minimum 18px text and simulated swipe events, then generates a cover preview and PDF in `output/`. The verified local PDF contains eight landscape pages. No browser dependency is required by the structural CI checks.
+Optional browser acceptance checks: with Playwright available on `NODE_PATH` (or locally installed), run `node scripts/check-browser.cjs`. Set `CHROME_PATH` to an existing Chrome executable if Playwright's browser is unavailable. This checks the English deck at seven viewport sizes and the Vietnamese deck at four viewport sizes, controls, boundaries, disabled scrolling, minimum 18px text and simulated swipe events, then generates separate cover previews and PDFs in `output/`. The English PDF contains eight landscape pages; the Vietnamese PDF contains ten. No browser dependency is required by the structural CI checks.
