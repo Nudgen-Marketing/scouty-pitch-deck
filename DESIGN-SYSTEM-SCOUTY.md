@@ -17,3 +17,7 @@ Large left-aligned headlines, restrained cards, generous whitespace, and monochr
 Three-column cards collapse to one column on mobile; the eight-step workflow collapses to two columns.
 Desktop and mobile slides fill the viewport with only the active slide visible; scrolling is disabled. Visible text is at least 18px. Print uses 13.333 × 7.5-inch pages.
 Visible controls, focus outlines, semantic headings, reduced-motion handling and readable text are required. Product sources remain in `docs/evidence.md`.
+
+## Presentation layout refresh
+
+Wide desktop slides use the full content width, a fixed brand header and a top-aligned title. Content panels fill the remaining area instead of floating in a large empty canvas. Charcoal panels emphasize key content; typography scales with the viewport. The Vietnamese cover uses a two-column layout with a vertical workflow. Phone layouts stay stacked with a minimum 18px text size. Print preserves each edition’s slide count: eight English pages and ten Vietnamese pages.

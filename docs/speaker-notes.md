@@ -18,3 +18,5 @@ Team names and credentials remain missing. The Australian event and allotted pre
 ## Australian audience adaptation — 27 October 2026
 
 Keep the two existing overseas partner relationships as early evidence; do not imply Australian customers or completed pilots. This audience adaptation proposes Australian pilot recruitment, not a proven geographic expansion. The $30 offer is unchanged; its currency remains unconfirmed and must not be described as A$30. The salary benchmark is annualised earnings, not a quote for an entry-level hire or a full employee replacement claim. No Vietnam program eligibility or rubric is asserted in this version.
+
+Layout note: headings and content panels now use a consistent presentation grid. The narrative and timings are unchanged.
