@@ -26,3 +26,5 @@ Dùng cùng `scouty-pitch-deck-vi.html`. Mười trang, tổng thời lượng 3
 **Scouty có đảm bảo cuộc hẹn không?** Không. Việc đặt lịch phụ thuộc vào phản hồi quan tâm, lịch trống và cấu hình dự án. Khả năng của sản phẩm khác với tỷ lệ chuyển đổi thực tế.
 
 Ghi chú trình bày: tiêu đề nằm phía trên, nội dung chia thành các khối rõ ràng. Bố cục mới không thay đổi thứ tự nội dung hay thời lượng nói.
+
+Điều hướng: nhấp vào nội dung hoặc cuộn xuống để sang trang; cuộn lên để quay lại. Có thể dùng phím mũi tên, Page Up/Down, Space/Shift+Space, Home/End hoặc vuốt ngang. Liên kết và thao tác chọn văn bản vẫn hoạt động bình thường. Dừng cuộn một nhịp trước khi chuyển trang tiếp theo.
